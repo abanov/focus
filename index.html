@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>Игра "Фокус толкает 2106</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=UTF-8">
+<LINK REL="stylesheet" HREF="data/game.css">
+<SCRIPT LANGUAGE="javascript" TYPE="text/javascript" CHARSET="UTF-8">
+</SCRIPT>
+<NOSCRIPT>
+<CENTER><H1>Автор игры Абанов В.Ю.</H1></CENTER>
+</NOSCRIPT>
+<BODY STYLE="background-color:#ffffff;">
+
+<CENTER>
+<TABLE ID="glogo" WIDTH=50% CELLSPACING=4 CELLPADDING=1 BORDER=0 STYLE="visibility:visible;">
+<TR><TD ALIGN="CENTER"><IMG ID="tlogo" SRC="data/logo.jpg"  STYLE="visibility:visible;" /></TD></TR>
+<TR><TD ALIGN="CENTER"><BR /><DIV ID="blogo" CLASS="gtitle" onclick="on_start_game()" STYLE="width:386px;color:#000000;background-color:#ffffaa;cursor:default;" onmouseout="this.style.color='#000000';this.style.backgroundColor='#ffffaa'" onmouseover="this.style.color='#ffff03';this.style.backgroundColor='#aa5500'"><B>НАЧАТЬ ИГРАТЬ, КЛАВИША ENTER</B></DIV></TD></TR>
+<TR><TD>
+<BR />
+<DIV CLASS="ghelp">
+<CENTER>
+<U>Описание игры:</U><BR />
+Ваша задача двигаясь на Форд Фокусе оттолкать все застрявшие в снегу Ваз 2106 <IMG SRC="data/ball.png" WIDTH="18" HEIGHT="18"/><BR />
+под гаражи для дальнейшего ремонта <IMG SRC="data/point.png" WIDTH="18" HEIGHT="18" /><BR />
+<U>Управление игрой:</U><BR />
+Движение влево - клавиша стрелка-влево или клавиша A<BR />
+Движение вправо - клавиша стрелка-вправо или клавиша D<BR />
+Движение вверх - клавиша стрелка-вверх или клавиша W<BR />
+Движение вниз - клавиша стрелка-вниз или клавиша S<BR />
+</TD></TR>
+</TABLE>
+</CENTER>
+
+<TABLE ID="gstatus" CLASS="gstate" STYLE="position:absolute;left:0px;top:1px;visibility:visible;">
+<TR>
+<TD><SPAN ID="level">УРОВЕНЬ - 1</SPAN></TD>
+<TD ALIGN="right"><SPAN ID="step">ШАГИ - 10</SPAN></TD>
+</TR>
+</TABLE>
+
+<IMG ID="back1" SRC="" STYLE="position:absolute;left:0px;top:0px;visibility:visible;" />
+<IMG ID="back2" SRC="" STYLE="position:absolute;left:0px;top:0px;visibility:visible;" />
+<IMG ID="back3" SRC="" STYLE="position:absolute;left:0px;top:0px;visibility:visible;" />
+<IMG ID="back4" SRC="" STYLE="position:absolute;left:0px;top:0px;visibility:visible;" />
+<DIV ID="field"></DIV>
+<IMG ID="user1" SRC="data/user1.png" STYLE="position:absolute;left:0px;top:0px;visibility:visible;" />
+<IMG ID="user2" SRC="data/user2.png" STYLE="position:absolute;left:0px;top:0px;visibility:hidden;" />
+<DIV ID="point"></DIV>
+
+<TABLE ID="gctrl" CLASS="gcontrol" STYLE="position:absolute;left:0px;top:0px;visibility:visible;">
+<TR>
+<TD STYLE="color:#757577;cursor:default;" onclick="on_restart()"   onmouseout="this.style.color='#757577'" onmouseover="this.style.color='#0053ff'" ALIGN="center">Начать заново - клавиша Enter</TD>
+<TD STYLE="color:#757577;cursor:default;" onclick="on_exit_menu()" onmouseout="this.style.color='#757577'" onmouseover="this.style.color='#0053ff'" ALIGN="center">Выйти в меню - клавиша Esc</TD>
+</TR>
+</TABLE>
+
+</BODY>
+<SCRIPT LANGUAGE="javascript" SRC="script/util.js" TYPE="text/javascript" CHARSET="UTF-8"></SCRIPT>
+<SCRIPT LANGUAGE="javascript" SRC="script/game.js" TYPE="text/javascript" CHARSET="UTF-8"></SCRIPT>
+</HTML>
